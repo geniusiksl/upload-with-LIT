@@ -120,7 +120,7 @@ async function main() {
     const wallet = new ethers.Wallet(normalizedKey, provider);
     console.log(`Using wallet address: ${wallet.address}`);
     
-    const encryptedData = JSON.parse(`{"ciphertext":"l27iV6Vb/otylV4T9mn106CEP8iGYn4GBYE8wxGhXBRP8iLmiE4K7s+4RwuduhpL5TdBtBD3hFpHR5Vn9ACbVH/LheRkHvCnyuPujK7B2JI8sXdzOo8PV0zJNUKUCawrBMKgtU29VvpA5bmZoDobMI0MLGFw0Y7ALN+GfIJ5bK6elBCp9h8IVluoWqRFAg==","dataToEncryptHash":"3dddeaacadf7003fade2458d76787ec53ca141719ac14119a41f241776eb185c","unifiedAccessControlConditions":[{"conditionType":"evmBasic","contractAddress":"","standardContractType":"","chain":"ethereum","method":"eth_getBalance","parameters":[":userAddress","latest"],"returnValueTest":{"comparator":">=","value":"0"}}],"chain":"ethereum","dataType":"string"}`);
+    const encryptedData = JSON.parse(`{"PUT_YOUR_DATA_FROM_IRYS_GATEWAY_HERE"}`);
 
     const balance = await provider.getBalance(wallet.address);
     console.log(`Wallet balance: ${ethers.utils.formatEther(balance)} ETH`);
